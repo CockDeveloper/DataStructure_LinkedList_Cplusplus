@@ -1,29 +1,29 @@
-Thumbs.db
+# Compiled Object files
+*.slo
+*.lo
+*.o
 *.obj
-*.exe
-*.pdb
-*.user
-*.aps
+
+# Precompiled Headers
+*.gch
 *.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.sln.docstates
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-[Bb]in
-[Dd]ebug*/
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
 *.lib
-*.sbr
-obj/
-[Rr]elease*/
-_ReSharper*/
-[Tt]est[Rr]esult*
-*.vssscc
-$tf*/
+
+# Executables
+*.exe
+*.out
+*.app
