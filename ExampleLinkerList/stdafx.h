@@ -11,8 +11,6 @@
 #include <cstdio>
 #include <tchar.h>
 
-#include "Node.h"
-#include "LinkedList.h"
 
 
 
