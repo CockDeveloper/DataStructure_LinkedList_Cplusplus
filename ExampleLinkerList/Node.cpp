@@ -1,33 +1,38 @@
 #include "StdAfx.h"
 #include "Node.h"
 
-template<class T>
+template<typename T>
+//template<class T>
 Node<T>::Node(void)
 {
     // default constructor
     // this is to allow us to create an object without any initialization
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 Node<T>::Node(const T& data, Node<T>* ptrNext = NULL)
 {
     this->SetData(data);
     this->SetNext(ptrNext);
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 Node<T>::~Node(void)
 {
 
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 Node<T>* Node<T>::NextNode(void)
 {
     return this->next;
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 void Node<T>::InsertAfter(Node<T>* ptrNext)
 {
     // not to lose the rest of the list, we ought to link the rest of the
@@ -39,7 +44,8 @@ void Node<T>::InsertAfter(Node<T>* ptrNext)
     this->next = p;
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 Node<T>* Node<T>::DeleteAfter(void)
 {
     // store the next Node in a temporary Node
@@ -51,7 +57,8 @@ Node<T>* Node<T>::DeleteAfter(void)
     return tempNode;
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 Node<T>* Node<T>::GetNode(const T& data, Node<T>* ptrNext = NULL)
 {
     Node<T>* newnode; // Local ptr for new node
@@ -64,19 +71,22 @@ Node<T>* Node<T>::GetNode(const T& data, Node<T>* ptrNext = NULL)
     return newnode;
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 T Node<T>::GetData(void)
 {
     return this->data;
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 void Node<T>::SetData(T data)
 {
     this->data = data;
 }
 
-template<class T>
+template<typename T>
+//template<class T>
 void Node<T>::SetNext(Node<T>* ptrNext)
 {
     this->next = ptrNext;

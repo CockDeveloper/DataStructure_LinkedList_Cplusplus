@@ -7,8 +7,12 @@
 
 #include "targetver.h"
 
-#include <stdio.h>
+#include <iostream>
+#include <cstdio>
 #include <tchar.h>
+
+#include "Node.h"
+#include "LinkedList.h"
 
 
 
