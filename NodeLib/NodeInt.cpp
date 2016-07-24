@@ -48,6 +48,70 @@ namespace NodeLib
         return isCreatedNode;
     }
 
+    tNodeInt* InsertNth(tNodeInt *head, int data, int position)
+    {
+        tNodeInt* ptrPosition = head;
+        tNodeInt* ptrNewNode = new tNodeInt;
+        if(ptrNewNode == NULL)
+        {
+            cerr << "Memory allocation failed." << endl;
+            exit(1);
+        }
+        ptrNewNode->data = data;
+        ptrNewNode->next = NULL;
+
+        if(position == 0)
+        {
+            ptrNewNode->next = head;
+            head = ptrNewNode;
+        }
+        else
+        {
+            while(position != 1)
+            {
+                ptrPosition = ptrPosition->next;
+                --position;
+            }
+            tNodeInt* ptrPositionNext = ptrPosition->next;
+            ptrPosition->next = ptrNewNode;
+            ptrNewNode->next = ptrPositionNext;
+        }
+
+        return head;
+    }
+
+    tNodeInt* Delete(tNodeInt *head, int position)
+    {
+        tNodeInt *ptrDelete = head;
+        if(position == 0)
+        {
+            if(ptrDelete != NULL)
+            {
+                head = ptrDelete->next;
+            }
+            else
+            {
+                head = NULL;
+            }
+
+        }
+        else
+        {
+            tNodeInt *ptrPosition = head;
+            while(position != 1)
+            {
+                ptrPosition = ptrPosition->next;
+                --position;
+            }
+
+            ptrDelete = ptrPosition->next;
+            ptrPosition->next = ptrPosition->next->next;
+        }
+
+        delete ptrDelete;
+        return head;
+    }
+
     void Print(tNodeInt *head)
     {
         tNodeInt *ptrCurrent = head;
