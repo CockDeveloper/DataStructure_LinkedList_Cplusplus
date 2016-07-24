@@ -27,12 +27,18 @@
     <ClInclude Include="..\ExampleLinkerList\Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NodeInt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\ExampleLinkerList\Node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeInt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
