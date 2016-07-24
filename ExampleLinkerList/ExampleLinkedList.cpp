@@ -18,8 +18,8 @@ int _tmain(int argc, _TCHAR* argv[])
     //r = new Node<char>('C');
     cout << "q data is " << q->GetData() << endl;
 
-    NodeLib::NodeInt *head = nullptr;
-    NodeLib::InsertAtHead(head, 2);
+    NodeLib::NodeInt *head = NULL;
+    head = NodeLib::InsertAtHead(head, 2);
     Print(head);
     while (head != NULL)
     {
