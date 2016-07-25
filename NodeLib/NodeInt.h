@@ -43,6 +43,14 @@ namespace NodeLib
      */
     tNodeInt* Delete(tNodeInt *head, int position);
 
+    /*Reverse: Method do reverse elements of a linked list
+     *head pointer input could be NULL as well for empty list
+     *@param NodeInt* head of list
+     *
+     *@return tNodeInt* head of list reverse
+     */
+    tNodeInt* Reverse(tNodeInt *head);
+
     /*Print: Method do print elements of a linked list on console 
      *head pointer input could be NULL as well for empty list
      *@param NodeInt* head => head of list

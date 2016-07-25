@@ -112,6 +112,24 @@ namespace NodeLib
         return head;
     }
 
+    tNodeInt* Reverse(tNodeInt *head)
+    {
+        tNodeInt *ptrPrevious, *ptrNext;
+        ptrPrevious = NULL;
+        ptrNext = NULL;
+
+        while( head != NULL)
+        {
+            ptrNext = head->next;
+            head->next = ptrPrevious;
+            ptrPrevious = head;
+            head = ptrNext;
+        }
+
+        head = ptrPrevious;
+        return head;
+    }
+
     void Print(tNodeInt *head)
     {
         tNodeInt *ptrCurrent = head;
