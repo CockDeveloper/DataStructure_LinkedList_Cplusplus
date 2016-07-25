@@ -121,4 +121,13 @@ namespace NodeLib
             ptrCurrent = ptrCurrent->next;
         }
     }
+
+    void ReversePrint(tNodeInt *head)
+    {
+        if(head != NULL)
+        {
+            ReversePrint(head->next);
+            cout << head->data << endl;
+        }
+    }
 }

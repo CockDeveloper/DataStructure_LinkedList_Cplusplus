@@ -29,16 +29,33 @@ namespace NodeLib
      *@param int data of new node
      *@param int position of new node
      *
-     *@return head of list
+     *@return tNodeInt* head of list
      */
     tNodeInt* InsertNth(tNodeInt *head, int data, int position);
 
+    /*InsertNth: Method do delete element on list at position
+     *position will always be at least 0 and less than
+     *the number of the elements in the list.
+     *@param NodeInt* head of list
+     *@param int position of new node
+     *
+     *@return tNodeInt* head of list
+     */
     tNodeInt* Delete(tNodeInt *head, int position);
-    /*Method: Print => Print elements of a linked list on console 
-    head pointer input could be NULL as well for empty list
+
+    /*Print: Method do print elements of a linked list on console 
+     *head pointer input could be NULL as well for empty list
      *@param NodeInt* head => head of list
      *
      *@return void
      */
     void Print(tNodeInt *head);
+
+    /*ReversePrint: Method do print elements of a linked list reverse on console 
+     *head pointer input could be NULL as well for empty list
+     *@param NodeInt* head of list
+     *
+     *@return void
+     */
+    void ReversePrint(tNodeInt *head);
 }
